@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div > p {   /* Aqui diz, div é pai do p 'Árvore DOM'*/
+            display: none; /* Esse NONE serve para apagar o texto */
+
+        }
+        
+        div:hover > p{ /* Geralmente esse hover é usado para montar menus suspensos no site */
+            display: block;  /* Esse BLOCK é para mostrar */
+            color: white;
+            background-color: red;
+            width: 300px;
+        } 
+
+        div:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        Passe o mouse aqui
+        <p>TEXTO ESCONDIDO...</p>
+    </div>
+</body>
+</html>

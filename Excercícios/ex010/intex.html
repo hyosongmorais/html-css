@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>você pode acessar o <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">repositório público no GHitHub</a></p>
+    <p>Voce tambem pode usar o atributo bem útil da tag de âncora, é o <pre><code>hreflang</code></pre> permite indicar o idioma principal do site para onde o link está desviando o fluxo de navegação, exemplo <a href="https://www.w3schools.com/html/ ">Site da W3Schools</a>, que é um site em inlgês</p><!--href= Referência a hiperTextos
+    rel= Relative
+    target=alvo-->
+    
+    <!--Vc pode usar o parâmetro {target="_blank" rel="external"} para fazer o link externo(external) abrir fora do seu site e quero que ele tenha uma target em  _blank-->
+    <p>Você também pode acessar o meu <a href="http://youtube.com/cursoemvideo/" target="_blank" rel="external">canal gratuito no YouTube</a> </p>
+    
+    <h1>Usando Links internos</h1>
+    <p>Esta é a primeira página do site, se você quiser, pode acessar também a minha <a href="./pag002.html" rel="next" target="_self">segunda página</a></p>
+    <!--Quando eu faço um link interno eu não preciso indicar minha URL comleta, apenas ancorar o link no href. -->
+    <p>você também pode acessar nossa <a href="./news/pag003.html" rel="next" target="_self">página de notícias</a></p>
+
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="./books/PrincipioDivino2014.pdf" download="PrincipioDivino2014/pdf" type="application/pdf">Baixar o livro em PDF</a></li><!--COMO EU SEI QUAL NOME COLOCAR DENTRO DO TYPE?
+        Existe um site chamado; "iana.org/assignments/media-types/" -->
+        <li><a href="./books/PrincipioDivino2014.pdf.zip" download="PrincipioDivino2014.pdf.zip" type="application/zip">Livro comopacto em Zip</a></li>
+    </ul>
+
+</body>
+</html>

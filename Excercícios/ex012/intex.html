@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+   <h1>Inserindo vídeos hospedado localmente </h1>
+   <p>Este vídeo está hospedado no meu próprio servidor.</p>
+   <!--Para usar o auto play no chrome, use o parâmetro muted+autoplay. -->
+   <!--Reduzir o tamanho da janela com o "width", porém, o arquivo continua o mesmo tamanho. -->
+   <video width="560" poster="./imagens/spillthetea.png" controls>
+    <source src="./media/meu-video.webm" type="video/webm">
+    <source src="./media/meu-video.ogv" type="video/ogv">
+    <source src="./media/meu-video.mp4" type="video/mp4">
+    <p></p> <!--MAS aqui tem um problema. o menor arquivo/video, tem 1,8MB isso da 1,7GB de tráfego pro seu cliente, isso vai pesar no bolso dele. e acabou que HOSPEDAR NO PROPRIO SITE vai sair mais caro.   -->
+   </video>
+   <h1>Inserindo vídeos do YouTube</h1>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/jPWsBuiy1rE?si=qu8mJq3pI7QN1E5n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><!--o codigo esta rodando em FILE, POR ISSO o yt vai barrar, por medidas de segurança. basta baixar a extenção LIVE SERVER. que ira funcionar.-->
+   <!--MAS TODAS AS PESSOAS IRÁ VER O VIDEO, e para o clientes que quisserem monetizar isso ? EXISTE varios hospedagem que cuidam disso, deixar menos acessivel ao todos, e somente assinantes podera ter, como, Vimeo. -->
+</body>
+</html>

@@ -1,0 +1,50 @@
+@charset "UTF-8";
+    /*
+        em HTML é id    = em CSS é  # ( Só pode ter um elemento )
+        em HTML é class = em CSS é  . ( Posso ter mais de um elemento )
+        obs: e o : São relacionados a pseudolasses. 
+
+        nota: Na class, eu consigo colocar mais de um tipo tbm, como, exemplo: do 'avancado destaque' que eu coloquei no h2.
+
+        Também posso colocar na mesma tag que esteja um id na frente. logo depois o class.
+    */
+
+
+body {
+    background-color: rgb(165, 223, 165);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: rgb(3, 108, 3);
+}
+
+h1#principal { 
+    text-align: center;
+    background-color: rgb(3, 108, 3);
+    color: white;
+}
+
+h2 {
+    color: rgb(57, 104, 57);
+}
+
+p{
+    text-align: justify;
+}
+
+.basico{
+    color: blue;
+}
+
+.intermediario{
+    color: yellow;
+}
+
+.avancado{
+    color: red; 
+}
+
+.destaque{
+    background-color: #63a06387;
+}
